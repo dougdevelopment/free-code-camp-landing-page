@@ -1,0 +1,398 @@
+/* Variables */
+:root{
+    --main-color: #202c55;
+    --secondary-color: #5c5c5c;
+}
+
+
+/* text */
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin:  0;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+}
+
+.hero-sub{
+    font-weight: normal;
+    font-size: 36px;
+}
+
+/* Body wrapper  & content containers*/
+
+#main-wrapper{
+    display: flex;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    flex-grow: 1;
+}
+
+/* Header */
+
+header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: white;
+    width: 100%; 
+    box-shadow: 0 8px 6px -6px black;   
+    align-items: center;
+    z-index: 1;
+}
+
+#header-img{
+    left: 0px;
+    width: 160px;
+    margin-left: 1px;
+}
+
+
+/* nav */
+
+nav{
+    flex-direction: row;
+    width: 50%;
+    padding-right: 1%;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+li:hover{
+    text-decoration: underline;
+}
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--secondary-color);
+}
+
+/* main content */
+
+/*Hero */
+main{
+  margin-top: 80px;
+}
+
+.hero-container{
+    color: white;
+    width: 80%;
+}
+.hero-container h1, .hero-container p{
+    opacity: 100%;
+    margin-left: 1%;
+}
+
+#hero{
+    background-image: url(./Assets/man-looking-his-watch.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.main-cta{
+    background-color: var(--main-color);
+    color: white;
+    width: 200px;
+    display: block;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    margin-left:1%;
+}
+.main-cta:hover{
+    border: 2px solid white;
+}
+
+h1 , .hero-sub{
+    background-color: rgba(46,64,131,0.5);
+    width: 90%;
+    padding: 2%;
+    
+}
+
+/*logo block */
+
+#logo-block{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+
+}
+
+.logo{
+    width: 10%;
+    max-width: 10%;
+}
+
+/*About us */
+.left{
+    width: 45%;
+    background-image: url('./Assets/groom-waiting-his-late-bride.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.right{
+    width: 45%;
+    padding: 2%;
+    height: 100%
+}
+
+.right p{
+    padding-top: 20px;
+}
+
+#about-block{
+    display: flex;
+    margin-top: 20px;
+    height: 300px;
+    align-items: center;
+
+}
+
+
+#quote-overlay{
+    width: 100%;
+    background-color: rgba(46,64,131,0.5);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+blockquote{
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 2%;
+}
+
+#quote-author{
+    font-style: italic;
+    font-size: 18px;
+    padding-left: 10%;
+}
+
+/*video block */
+video{
+    width: 100%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+    filter: grayscale(100%);
+}
+
+#video-block{
+    background-color: #071330;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+/* Card Component */ 
+
+#cards-container{
+    margin-top: 20px;
+}
+
+#cards-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    border: 2px solid #071330;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.card p{
+    padding-top: 5%;
+}
+
+.crd-contnt{
+    padding: 40px;
+}
+
+.crd-contnt p{
+    margin-top: 10px;
+}
+
+#what-we-do{
+    text-align: center;
+}
+
+
+.card img{
+    width: 100%;
+    padding: 0px;
+}
+
+/*form*/
+#form-block{
+    background-color: var(--main-color);
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+form{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+#email{
+    width: 70%;
+    height: 30px;
+    border: none;
+    padding: 0;
+}
+
+#submit{
+    background-color: white;
+    color: var(--main-color);
+    height: 30px;
+    outline: none;
+    width: 20%;
+    border: none;
+}
+
+#submit:hover{
+    color: white;
+    background-color: var(--main-color);
+    border: 2px solid white;
+}
+
+/*footer*/
+footer{
+    background-color: var(--secondary-color);
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+
+    header{
+        width: 100%;
+        margin:0;
+    }
+
+    #cards-block{
+        flex-direction: column;
+        width: 90%;
+        justify-items: auto;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #cards-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 85%;
+    }
+
+    #about-block{
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+
+    .left{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    
+    .right{
+        width: 90%;
+        padding: 2%;
+        height:50%
+    }
+
+    video{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #video-block{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    form{
+       width: 100%;
+    }
+
+    
+
+}
